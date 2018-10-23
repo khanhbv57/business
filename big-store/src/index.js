@@ -9,6 +9,7 @@ import { createStore } from 'redux';
 import Header from './Header.js';
 import Footer from './Footer.js';
 import Single from './components/Single.js';
+import Product from './components/Product.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // const Store = createStore(reducer, initialState);
 
@@ -38,7 +39,7 @@ ReactDOM.render(
             <Header />
             <Route exact path="/" component={App} />
             <Route path="/single" component={Single} />
-            <Route path="/topics" component={Header} />
+            <Route path="/product" component={Product} />
             <Footer />
         </div>
     </Router>,
